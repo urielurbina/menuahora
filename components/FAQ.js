@@ -7,22 +7,49 @@ import { useRef, useState } from "react";
 
 const faqList = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "¿Qué es MenúAhora?",
+    answer: <div className="space-y-2 leading-relaxed">MenúAhora es un servicio que crea un menú digital
+    personalizado para tu negocio. Nosotros diseñamos el menú por ti; solo tienes que subir tus productos 
+    y nosotros nos encargamos del resto.</div>,
   },
   {
-    question: "Can I get a refund?",
+    question: "¿Cuánto tiempo tarda en estar listo mi menú?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        El menú personalizado se entrega en un plazo de 24 a 72 horas, 
+        dependiendo de la cantidad de productos y detalles proporcionados.
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "¿Puedo actualizar mi menú después de recibirlo?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">Sí, puedes editar y actualizar los productos en tu menú 
+      en cualquier momento de forma rápida y sencilla, sin necesidad de contactar a un diseñador. 
+      El diseño visual del menú no se puede modificar, pero siempre estará alineado con la identidad de tu marca.
+      </div>
+    ),
+  },
+  {
+    question: "¿Qué necesito para comenzar?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">Solo necesitas completar un formulario con la información 
+      de tu negocio y subir los productos en un archivo Excel. Nosotros nos encargamos del resto. 
+      Pronto, contaremos con un portal para facilitar aún más la gestión de tus productos.</div>
+    ),
+  },
+  {
+    question: "¿Puedo personalizar el diseño del menú?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">Sí, un diseñador profesional adaptará el menú a la 
+      identidad de tu marca, incluyendo colores, tipografía y estilo visual.</div>
+    ),
+  },
+  {
+    question: "¿Qué pasa si necesito ayuda?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">Nuestro equipo de soporte está disponible para 
+      asistirte con cualquier duda o problema que puedas tener.</div>
     ),
   },
 ];
@@ -94,7 +121,7 @@ const FAQ = () => {
         <div className="flex flex-col text-left basis-1/2">
           <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
-            Frequently Asked Questions
+            Preguntas Frecuentes
           </p>
         </div>
 

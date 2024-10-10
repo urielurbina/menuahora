@@ -26,14 +26,12 @@ const Testimonial1Small = () => {
         <div className="text-base leading-relaxed space-y-2 max-w-md mx-auto text-center">
           <p>
             <span className="bg-warning/25 px-1.5">
-              I don&apos;t want to pay Stripe $2 for every invoice.
+            Antes diseñaba mi menú en Canva y perdía tiempo yendo a imprimir cada cambio. 
             </span>{" "}
-            I don&apos;t want to spend 10 minutes manually crafting every
-            invoice either.
+            Ahora todo es digital y lo puedo actualizar en segundos.
           </p>
-          <p>
-            Zenvoice solved this problem once and for all. The app is simple,
-            but it nails the job perfectly.
+          <p> 
+          Además, mi menú quedó súper bonito y perfectamente alineado con la imagen de mi negocio.
           </p>
         </div>
         <div className="flex justify-center items-center gap-3 md:gap-4">
