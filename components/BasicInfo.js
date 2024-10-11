@@ -1,4 +1,5 @@
-import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
+/* eslint-disable react/no-unescaped-entities */
+import { PhotoIcon } from '@heroicons/react/24/solid'
 
 export default function BasicInfo() {
   return (
@@ -76,7 +77,7 @@ export default function BasicInfo() {
                     id="about"
                     name="about"
                     rows={3}
-                    placeholder='Ejemplo: "Ofrecemos tacos gourmet con ingredientes locales y auténticos."'
+                    placeholder="Ejemplo: &#34;Ofrecemos tacos gourmet con ingredientes locales y auténticos.&#34;"
                     className="block w-full rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     defaultValue={''}
                   />
