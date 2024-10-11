@@ -1,4 +1,4 @@
-import ButtonAccount from "@/components/ButtonAccount";
+import DashboardLayout from "@/components/DashboardLayout";
 
 export const dynamic = "force-dynamic";
 
@@ -7,11 +7,9 @@ export const dynamic = "force-dynamic";
 // See https://shipfa.st/docs/tutorials/private-page
 export default async function Dashboard() {
   return (
-    <main className="min-h-screen p-8 pb-24">
-      <section className="max-w-xl mx-auto space-y-8">
-        <ButtonAccount />
-        <h1 className="text-3xl md:text-4xl font-extrabold">Private Page</h1>
-      </section>
-    </main>
+    <DashboardLayout>
+      <h1 className="text-2xl font-bold">Dashboard</h1>
+      <p>Welcome to your dashboard.</p>
+    </DashboardLayout>
   );
 }
