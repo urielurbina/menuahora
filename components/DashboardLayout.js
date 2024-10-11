@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from '@headlessui/react'
+import { Dialog } from '@headlessui/react'
 import {
   Bars3Icon,
   CalendarIcon,
@@ -38,25 +38,17 @@ export default function DashboardLayout({ children }) {
   return (
     <>
       <div>
-        <Dialog open={sidebarOpen} onClose={setSidebarOpen} className="relative z-50 lg:hidden">
-          <DialogBackdrop
-            transition
-            className="fixed inset-0 bg-gray-900/80 transition-opacity duration-300 ease-linear data-[closed]:opacity-0"
-          />
+        <Dialog as="div" open={sidebarOpen} onClose={setSidebarOpen} className="relative z-50 lg:hidden">
+          <div className="fixed inset-0 bg-gray-900/80" />
 
           <div className="fixed inset-0 flex">
-            <DialogPanel
-              transition
-              className="relative mr-16 flex w-full max-w-xs flex-1 transform transition duration-300 ease-in-out data-[closed]:-translate-x-full"
-            >
-              <TransitionChild>
-                <div className="absolute left-full top-0 flex w-16 justify-center pt-5 duration-300 ease-in-out data-[closed]:opacity-0">
-                  <button type="button" onClick={() => setSidebarOpen(false)} className="-m-2.5 p-2.5">
-                    <span className="sr-only">Close sidebar</span>
-                    <XMarkIcon aria-hidden="true" className="h-6 w-6 text-white" />
-                  </button>
-                </div>
-              </TransitionChild>
+            <Dialog.Panel className="relative mr-16 flex w-full max-w-xs flex-1">
+              <div className="absolute left-full top-0 flex w-16 justify-center pt-5">
+                <button type="button" onClick={() => setSidebarOpen(false)} className="-m-2.5 p-2.5">
+                  <span className="sr-only">Close sidebar</span>
+                  <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                </button>
+              </div>
               {/* Sidebar component, swap this element with another sidebar if you like */}
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
                 <div className="flex h-16 shrink-0 items-center">
@@ -127,7 +119,7 @@ export default function DashboardLayout({ children }) {
                   </ul>
                 </nav>
               </div>
-            </DialogPanel>
+            </Dialog.Panel>
           </div>
         </Dialog>
 
