@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
               clipRule="evenodd"
             />
           </svg>{" "}
-          Back
+          Back.
         </Link>
         <h1 className="text-3xl font-extrabold pb-6">
           Privacy Policy for {config.appName}
